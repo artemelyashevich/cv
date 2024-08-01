@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #272727;
+}
+
+svg {
+  width: 15px;
+}
+
+h2 {
+  padding-left: 10px;
+  border-left: 7px solid #007bff;
+  margin-bottom: 5px;
+}
+
+.link {
+  color: #007bff;
+}
+
+.resume {
+  max-width: 1140px;
+  margin: 1rem auto;
+  padding: 2rem 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  box-shadow: 0px 0px 25px -4px rgba(34, 60, 80, 0.2);
+}
+.resume_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 20px 0;
+  margin-bottom: 1em;
+}
+.resume_header-title h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.resume_header-title p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.resume_header-contacts {
+  width: 25%;
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  padding-left: 20px;
+}
+.resume_contacts {
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  padding-left: 10px;
+}
+.resume_contacts-contact {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+.resume_contacts-contact:last-child {
+  margin-bottom: 0;
+}
+.resume-intro {
+  display: flex;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  padding: 30px 0;
+}
+.resume-intro img {
+  max-width: 120px;
+  border-radius: 50%;
+}
+.resume-body {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+.resume-main {
+  width: 75%;
+}
+.resume-main-project {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 20px 10px 0 10px;
+  border-radius: 10px;
+}
+.resume-main-project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.resume-main-project-top span {
+  font-weight: 300;
+}
+.resume-main-project-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.resume-main-project-technologies {
+  display: flex;
+  column-gap: 10px;
+  margin: 10px 0 0 10px;
+}
+.resume-main-project-technologies-technology {
+  background-color: #dbdbdb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resume-right {
+  width: 25%;
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  padding-left: 20px;
+}
+.resume-right-item {
+  margin-bottom: 20px;
+}
+.resume-right-item ul {
+  padding-left: 20px;
+}
+.resume-right-item h4 {
+  padding-bottom: 5px;
+}
+.resume-right-item li {
+  padding-bottom: 10px;
+}
+.resume-right-item li:last-child {
+  padding-bottom: 0;
+}
+.resume-right-item p,
+.resume-right-item span {
+  font-weight: 300;
+}
+.resume-right-item span {
+  margin-bottom: 10px;
+}
+.resume-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resume-footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.resume-footer .download {
+  background-color: #dbdbdb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  padding: 2px;
+}
+li:last-child {
+  margin-top: 5px;
+}
+
+.about {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 560px) {
+  .resume {
+    margin: 0;
+  }
+  .resume_header {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .resume_header-contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    border: none;
+    padding: 0;
+  }
+  .resume-intro {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  .resume-intro img {
+    margin-bottom: 5px;
+  }
+  .resume-body {
+    flex-direction: column-reverse;
+  }
+  .resume-main {
+    width: 100%;
+  }
+  .resume-right {
+    border: none;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 460px) {
+  svg {
+    width: 10px;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  span,
+  p,
+  a {
+    font-size: 0.8rem;
+  }
+  .resume {
+    margin: 0;
+    padding: 2rem;
+  }
+  .resume_header-title {
+    margin-bottom: 15px;
+  }
+  .resume_header-title h1 {
+    font-size: 2rem;
+  }
+  .resume_header-title p {
+    font-size: 1.25rem;
+  }
+  .resume_header-contacts {
+    font-size: 0.8rem;
+  }
+}
